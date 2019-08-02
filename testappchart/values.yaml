@@ -1,0 +1,5 @@
+deployment:
+  name: apache-deployment
+  label: apache
+  image: ganesh0412/myfrontend1
+  tag: 2.0

@@ -7,7 +7,8 @@ spec:
   - default:
       cpu: "800m"
       memory: "800Mi"
-    defaultRequest:
+    defaultRequest:kubectl exec -nprod -it <your-dj-pod-name> -c dj bash
+
       cpu: "800m"
       memory: "800Mi"
     max:

@@ -1,0 +1,587 @@
+ls
+    2  ls
+    3  0wd
+    4  pwd
+    5  c d..
+    6  ls
+    7  cd..
+    8  c d..
+    9  cd ..
+   10  ls
+   11  pwd
+   12  cd environment/
+   13  sudo yum install docker
+   14  docker --version
+   15  vi /etc/group
+   16  sudo usermod -a -G docker ec2-user
+   17  whoami
+   18  id -a
+   19  sudo service docker start
+   20  service docker status
+   21  sudo service docker status
+   22  sudo chkconfig docker on
+   23  docker info
+   24  docker images
+   25  docker container ls
+   26  docker ps -a
+   27  docker pull https://index.docker.io/v1/httpd:2.4
+   28  docker pull httpd:2.4
+   29  docker pull http
+   30  docker pull httpd
+   31  docker images
+   32  docker inspect httd
+   33  docker inspect httpd
+   34  docker search httpd
+   35  docker run -d --name testapache httpd:2.4
+   36  docker ps
+   37  cd /etc/
+   38  pwd
+   39  ls
+   40  c d..
+   41  cd ..
+   42  ls
+   43  docker stop httpd
+   44  docker stop testapache
+   45  docker ps
+   46  docker ps -a
+   47  docker start testapache
+   48  docker ps
+   49  docker ip https://index.docker.io/v1/httpd:2.4
+   50  docke rls
+   51  docker container ls
+   52  docker pause help
+   53  docker help
+   54  git clone https://github.com/Ganesh0412/dockertraining.git
+   55  c d-
+   56  cd -
+   57  cd /home/ec2-user/environment/
+   58  git clone https://github.com/Ganesh0412/dockertraining.git
+   59  ls
+   60  cd dockertraining/
+   61  ls
+   62  c df
+   63  ;s
+   64  cd frontend/
+   65  ;s
+   66  ls
+   67  cd ..
+   68  ls
+   69  c d..
+   70  ls
+   71  cd ..
+   72  ls
+   73  cd dockertraining/
+   74  ls
+   75  cd frontend/
+   76  ls
+   77  docker build -t Ganesh0412/myapache:1.0 ../../dockertraining/frontend/
+   78  docker build -t ganesh0412/myapache:1.0 ../../dockertraining/frontend/
+   79  docker imgaes
+   80  docker images
+   81  git status
+   82  git add .
+   83  git status
+   84  docker run -d --name myapache -p 9000:80 ganesh0412/myapache:1.0
+   85  docker images
+   86  docker container ls
+   87  git add .
+   88  git status
+   89  git commit -a -m "First commit"
+   90  git push
+   91  PWD
+   92  pwd
+   93  ls
+   94  cd dockertraining/
+   95  ls
+   96  cd exercise1/
+   97  ls
+   98  docker build -t Ganesh0412/nginx .
+   99  docker build -t Ganesh0412/nginx:1.0  .
+  100  docker build -t Ganesh0412/nginx:1.0  /
+  101  l
+  102  ls
+  103  docker build -t Ganesh0412/nginx:1.0 
+  104  docker build -t Ganesh0412/nginx:1.0 .
+  105  ls
+  106  cd co
+  107  cd code/
+  108  docker build -t Ganesh0412/nginx:1.0 ../../exercise1
+  109  ls
+  110  cd ..
+  111  ls
+  112  vi Dockerfile 
+  113  docker build -t nginx:1.0
+  114  docker build -t nginx:1.0 .
+  115  vi Dockerfile 
+  116  yum install nginx php php-gd php-mysql
+  117  whoami
+  118  vi Dockerfile 
+  119  docker build -t nginx:1.0 .
+  120  yum install nginx
+  121  sudo yum install ngninx
+  122  sudo yum install nginx php 
+  123  sudo yum install nginx php php-gd php-mysql
+  124  yum remove httpd
+  125  sudo yum remove httpd
+  126  sudo yum install nginx php php-gd php-mysql
+  127  yum remove php*
+  128  sudo yum remove php*
+  129  sudo yum install nginx php php-gd php-mysql
+  130  yum remove httpd*
+  131  sudo yum remove httpd*
+  132  sudo yum install nginx php php-gd php-mysql
+  133  docker build -t nginx:1.0 .
+  134  vi Dockerfile 
+  135  docker build -t nginx:1.0 .
+  136  vi Dockerfile 
+  137  docker build -t nginx:1.0 .
+  138  vi Dockerfile 
+  139  docker build -t nginx:1.0 .
+  140  sudo yum clean all
+  141  docker build -t nginx:1.0 .
+  142  docker build .
+  143  docker build -t nginx:1.0 .
+  144  docker run -dit ubuntu:18.04
+  145  docker images
+  146  docker ps -a
+  147  vi Dockerfile 
+  148  docker build -t nginx:1.0 .
+  149  docker images
+  150  docker build -t nginx:1.0 .
+  151  history
+  152  docker image nginx
+  153  docker history nginx
+  154  docker images
+  155  docker history nginx
+  156  docker history nginx:1.0
+  157  clear
+  158  docker ps -a
+  159  docker exec -it hungry_raman /bin/bash
+  160  docker stop $(docker ps -aq)
+  161  docker rm $(docker ps -aq)
+  162  docker ps -a
+  163  docker images
+  164  docker container 
+  165  docker imagesls
+  166  docker container ls
+  167  clear
+  168  docker images
+  169  docker run -d -p 9000:80 --name ganesh0412/myapache -v myapache_var_log:/var/log -v /home/ec2-user:/home/ec2-user  myapache:1.1
+  170  docker run -d -p 9000:80 --name ganesh0412/myapache -v myapache_var_log:/var/log -v /home/ec2-user:/home/ec2-user  myapache:1.0
+  171  docker run -d -p 9000:80 --name test1 -v myapache_var_log:/var/log -v /home/ec2-user:/home/ec2-user  ganesh0412/myapache:1.0
+  172  docker ocntainer ls
+  173  docker ps -a
+  174  docker exec -it test1 /bin/bash
+  175  cd /var/lib/docker/volumes
+  176  mv ~/.aws/ ~/.awsbck/
+  177  cd ~/.awsbck/
+  178  ls
+  179  cat credentials 
+  180  docker images
+  181  docker build -t mohanraz81:awslogs:1.0 awslogs
+  182  docker build -t mohanraz81:awslogs:1.0 awslogs/
+  183  ls
+  184  cd /home/ec2-user/
+  185  ls
+  186  cd awslogs/
+  187  docker build -t mohanraz81:awslogs:1.0 
+  188  docker build -t mohanraz81:awslogs:1.0 .
+  189  docker build -t mohanraz81/awslogs:1.0 .
+  190  docker run -d --name logagent -v myapache_var_log
+  191  docker volume ls
+  192  docker run -d --name logagent -v myapache_var_log:/mnt/log:ro mohanraz81/awslogs:1.0
+  193  docker ps -
+  194  docker ps -a
+  195  curl http://localhost:9000
+  196  ipconfig
+  197  ifconfig
+  198  docker container ls
+  199  docker ps pa
+  200  docker stop $(docker ps -aq)
+  201  docker rm $(docker ps -aq)
+  202  docker ps -a
+  203  docker network ls
+  204  docker inspect none
+  205  docker network create --driver=bridge --subnet 10.1.0.0/16 --gateway 10.1.0.1 testnw
+  206  docker netwrk ls
+  207  docker network ls
+  208  docker run -d -p 9000:80 --name frontend --net testnw mohanraz81/myapache2907:1.0
+  209  docker images
+  210  docker run -d -p 9000:80 --name frontend --net testnw ganesh0412/myapache2907:1.0
+  211  docker run -d -p 9000:80 --name frontend --net testnw ganesh0412/myapache:1.0
+  212  docker run -d --name backend --net testnw ganesh0412/myapache:1.0
+  213  docker ps
+  214  docker network
+  215  docker ps
+  216  docker inspect testnw
+  217  docker exec -it frontend /bin/bash
+  218  docker ps
+  219  docker stop frontend backend
+  220  docker run -d -p 9000:80 --name frontend ganesh0412/myapache:1.0
+  221  docker ps
+  222  docker run -d -p 9000:80 --name frontend ganesh0412/myapache:1.0
+  223  docker remove frontend backend
+  224  docker rm frontend backend
+  225  docker run -d -p 9000:80 --name frontend ganesh0412/myapache:1.0
+  226  docker run -d --name backend ganesh0412/myapache:1.0
+  227  docker exec -it frontend /bin/bash
+  228  docker stop frontend backend
+  229  docker remove frontend backend
+  230  docker rm frontend backend
+  231  docker run -d --name backend ganesh0412/myapache:1.0
+  232  docker run -d -p 9000:80 --name frontend --link backend ganesh0412/myapache:1.0
+  233  docker exec -it frontend /bin/bash
+  234  history
+  235  docker stop frontend backend
+  236  docker rm frontend backend
+  237  docker run -d -p 9000:80 --name frontend --net testnw mohanraz81/myapache2907:1.0
+  238  docker run -d -p 9000:80 --name frontend --net testnw ganesh0412/myapache:1.0
+  239  docker run -d --name backend --net testnw ganesh0412/myapache:1.0
+  240   docker exec -it frontend /bin/bash
+  241   docker exec -it backend /bin/bash
+  242  docker stop $(docker ps -aq)
+  243  docker images 
+  244  docker rm $(docker ps -aq)
+  245  docker image inspect ubuntu
+  246  docker image inspect ubuntu:18.04
+  247  cd /home/ec2-user/environment/
+  248  sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  249  ls
+  250  sudo chmod +x /usr/local/bin/docker-compose
+  251  docker-compose 
+  252  ls
+  253  cd ..
+  254  sl
+  255  ls
+  256  cp -R awslogs/ environment/dockertraining/
+  257  cd /home/ec2-user/
+  258  ls
+  259  cd environment/l
+  260  cd environment/
+  261  ls
+  262  cd dockertraining/
+  263  ls
+  264  docker-compose build
+  265  docker images
+  266  docker ps -a
+  267  docker-compose up -d
+  268  docker ps -a
+  269  docker network l
+  270  docker network ls
+  271  docker volume ls
+  272  docker login
+  273  docker-compose push
+  274  docker logout
+  275  docker push
+  276  docker-compose push
+  277  cd ..
+  278  sl
+  279  ls
+  280  cd dockertraining/
+  281  ls
+  282  docker push
+  283  docker-compose push
+  284  docker login
+  285  docker-compose push
+  286  ls -ltr
+  287  pwd
+  288  docker container
+  289  docker images
+  290  docker-compose down
+  291  docker ps -a
+  292  docker rmi mybackendlogs
+  293  docker image rmi mybackendlogs
+  294  docker rmi d53841c3dd7b
+  295  docker ps
+  296  docker images
+  297  vi docker-compose.yml 
+  298  docker-compose build
+  299  docker-compose build -d
+  300  docker images
+  301  docker remove d53841c3dd7b
+  302  docker rmi d53841c3dd7b
+  303  docker-compose up
+  304  docker-compose down
+  305  docker ps
+  306  docker images
+  307  docker rmi mybackend
+  308  docker images -a
+  309  docker images
+  310  docker images -a
+  311  docker images | grep "pattern" | awk '{print $3}'
+  312  docker images | grep "my*"
+  313  vi docker-compose.yml 
+  314  docker-compose build -d
+  315  vi docker-compose.yml 
+  316  docker-compose build -d
+  317  docker-compose down
+  318  docker network
+  319  docker network ls
+  320  docker volume ls
+  321  docker volume remove dockertraining_backend-var-log
+  322  docker volume remove dockertraining_frontend-var-log
+  323  docker-compose build -d
+  324  history
+  325  docker images
+  326  docker ps -a
+  327  docker-compose build -d
+  328  docker-compose -d build
+  329  docker-compose build -d
+  330  docker build
+  331  docker-compose build
+  332  docker-compose up -d
+  333  docker-compose push
+  334  sudo bash
+  335  ls -a
+  336  history
+  337  mv ~/.aws/ ~/.awsbck/
+  338  pip install awscli --upgrade --user
+  339   curl -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.13.7/2019-06-11/bin/linux/amd64/aws-iam-authenticator
+  340  ls
+  341  chmod +x ./aws-iam-authenticator
+  342  mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$HOME/bin:$PATH
+  343  echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
+  344  aws-iam-authenticator help
+  345  eksctl version
+  346   curl --silent --location "https://github.com/weaveworks/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+  347  sudo mv /tmp/eksctl /usr/local/bin
+  348  eksctl version
+  349  eksctl --version
+  350  eksctl version
+  351  eksctl create cluster --region us-east-1 --name prod --version 1.13 --nodegroup-name standard-workers --node-type t3.small --nodes 3 --nodes-min 3 --nodes-max 3 --node-ami auto
+  352  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  353  chmod +x ./kubectl
+  354  sudo mv ./kubectl /usr/local/bin/kubectl
+  355  kubectl version
+  356  kubectl worker nodes
+  357  kubectl workernodes
+  358  kubectl get
+  359  kubectl nodes
+  360  kubectl get nodes
+  361  kubectl get ip-192-168-1-200.ec2.internal
+  362  cat ~/.kube/config 
+  363  kubectl get nodes
+  364  kubectl describe node ip-192-168-1-200.ec2.internal 
+  365  hostname
+  366  kubectl get nodes
+  367  kubectl get pods --namespace=kube-public
+  368  kubectl get pods --namespace=kube-sysadmin
+  369  kubectl get pods --namespace=kube-admin
+  370  kubectl get pods --namespace=kube-system
+  371  kubectl create namespace test
+  372  kubectl get namespace
+  373  kubectl describe namespace=test
+  374  kubectl describe --namespace=test
+  375  kubectl config set-context $(kubectl config current-context) --namespace=test
+  376  kubectl config view | grep namespace
+  377  kubectl config view
+  378  cd dockertraining/
+  379  ls
+  380  kubectl apply -f deploy.yaml 
+  381  kubectl get deployment
+  382  kubectl describe deployment apache-deployment
+  383  kubectl get rs
+  384  kubectl describe rs apache-deployment-6c987667f4
+  385  kubectl get pods
+  386  kubectl get service
+  387  history
+  388  mv ~/.aws/ ~/.awsbck/
+  389  kubectl get service
+  390  mv ~/.aws/ ~/.awsbck111
+  391  kubectl get service
+  392  ekscl delete cluster --region us-east-1 --name prod
+  393  eksctl delete cluster --region us-east-1 --name prod
+  394  ls
+  395  history
+  396  ls
+  397  cd dockertraining/
+  398  ls
+  399  vi deploy.yaml 
+  400  clear
+  401  history
+  402  mv ~/.aws/ ~/.awsbck1
+  403  clear
+  404  eksctl create cluster --region us-east-1 --name prod --version 1.13 --nodegroup-name standard-workers --node-type t3.medium --zones=us-east-1a,us-east-1b,us-east-1c --nodes 4 --nodes-min 4 --nodes-max 4 --node-ami auto
+  405  kubectl get nodes
+  406  kubectl apply -f deploy.yaml 
+  407  kubectl update -f deploy.yaml 
+  408  kubectl deployment apache-deployment
+  409  kubectl deployment delete apache-deployment
+  410  kubectl delete deployment
+  411  kubectl delete deployment apache-deployment
+  412  kubectl delete service testfrontend
+  413  kubectl apply -f deploy.yaml 
+  414  kubectl describe apache-deployment
+  415  kubectl get hpa
+  416  kubectl describe hpa apache-deployment-hpa
+  417  curl -LO https://git.io/get_helm.sh
+  418  chmod 700 get_helm.sh
+  419  ./get_helm.sh 
+  420  Create Tiller Namespace
+  421  kubectl create namespace tiller
+  422  export TILLER_NAMESPACE=tiller
+  423  ls
+  424  cd dockertraining/
+  425  ls
+  426  kubectl get hpa
+  427  kubectl describe hpa apache-deployment-hpa
+  428  export HELM_HOST=:44134
+  429  helm init --client-only
+  430  helm repo update
+  431  DOWNLOAD_URL=$(curl --silent "https://api.github.com/repos/kubernetes-incubator/metrics-server/releases/latest" | jq -r .tarball_url)
+  432  sudo yu install jq
+  433  sudo yum install jq
+  434  DOWNLOAD_URL=$(curl --silent "https://api.github.com/repos/kubernetes-incubator/metrics-server/releases/latest" | jq -r .tarball_url)
+  435  ls
+  436  echo $DOWNLOAD_URL
+  437  DOWNLOAD_VERSION=$(grep -o '[^/v]*$' <<< $DOWNLOAD_URL)
+  438  echo $DOWNLOAD_VERSION
+  439  curl -Ls $DOWNLOAD_URL -o metrics-server-$DOWNLOAD_VERSION.tar.gz
+  440  LS
+  441  ls
+  442  mkdir metrics-server-$DOWNLOAD_VERSION
+  443  tar -xzf metrics-server-$DOWNLOAD_VERSION.tar.gz --directory metrics-server-$DOWNLOAD_VERSION --strip-components 1
+  444  kubectl apply -f metrics-server-$DOWNLOAD_VERSION/deploy/1.8+/
+  445  kubectl get deployment metrics-server -n kube-system
+  446  kubectl get deployment metrics-server
+  447  kubectl get --raw /metrics
+  448  kubectl create namespace prometheus
+  449  helm install stable/prometheus --name prometheus --namespace prometheus --set alertmanager.persistentVolume.storageClass="gp2",server.persistentVolume.storageClass="gp2"
+  450  kubectl get pods -n prometheus
+  451  kubectl get hpa
+  452  kubectl get pods
+  453  kubectl get service
+  454  kubectl get hpa
+  455  kubectl get pods
+  456  kubectl get hpa
+  457  kubectl get pods
+  458  kubectl get hpa
+  459  kubectl get deloymens
+  460  kubectl get deloyments
+  461  kubectl get deployments
+  462  kubectl run -i --tty load-generator --image=busybox /bin/sh
+  463  kubectl delete all --all
+  464  kubectl get deployments
+  465  kubectl get pods
+  466  kubectl get svc
+  467  kubectl get services
+  468  kubectl get namespace
+  469  kubectl create namespace test
+  470  kubectl get namespace
+  471  history
+  472  kubectl config set-context $(kubectl config current-context) --namespace=test
+  473  kubectl config view | grep namespace:
+  474  kubectl apply -f dockertraining/deploy.yaml 
+  475  kubectl get deployments
+  476  kubectl get pods
+  477  kubectl get service
+  478  curl http://myapp.student9.courseandlabs.com/
+  479  curlt http://af9c48251b43911e9b61f12ea8839743-40871419.us-east-1.elb.amazonaws.com.
+  480  curl http://af9c48251b43911e9b61f12ea8839743-40871419.us-east-1.elb.amazonaws.com.
+  481  curl http://myapp.student8.courseandlabs.com
+  482  ls
+  483  docker images
+  484  docker build -t ganesh0412/myfrontend1:2.0 frontend/
+  485  docker images
+  486  docker push ganesh0412/frontend:2.0
+  487  docker push ganesh0412/myfrontend1:2.0
+  488  ls
+  489  vi deploy.yaml 
+  490  kubectl apply -f deploy.yaml 
+  491  kubectl get rs
+  492  kubectl rollout history deployment.v1beta1.apps/nginx-deployment --revision=2
+  493  kubectl rollout history deployment.v1beta1.apps/apache-deployment --revision=2
+  494  kubectl rollout history deployment.v1beta1.apps/apache-deployment --revision=1
+  495  kubectl rollout history deployment.v1beta1.apps/apache-deployment --revision=3
+  496  kubectl rollout history deployment.v1beta1.apps/apache-deployment
+  497  kubectl rollout undo deployment.v1beta1.apps/apache-deployment
+  498  kubectl get rs
+  499  kubectl rollout history deployment.v1beta1.apps/apache-deployment
+  500  kubectl rollout history deployment.v1beta1.apps/apache-deployment --revision=3
+  501  kubectl rollout history deployment.v1beta1.apps/apache-deployment --revision=2
+  502  kubectl delete all --all
+  503  ls
+  504  ls
+  505  cd dockertraining/
+  506  ls
+  507  kubectl apply -f deploytt.ym 
+  508  kubectl get service
+  509  kubectl get namespace
+  510  kubectl create namespace newtest
+  511  kubectl get namespace
+  512  kubectl apply -f deploytt.ym --namespace=newtest
+  513  kubectl get pds
+  514  kubectl get pods
+  515  kubectl get pods --namespace=newtest
+  516  kubectl exec --namespace=newtest -it frontend-c8665bf8b-rglvk /bin/bash
+  517  kubectl delete all --all
+  518  kubectl delete namespace=test
+  519  kubectl delete --namespace=test
+  520  kubectl delete namespace --namespace=newtest
+  521  kubectl pods
+  522  kubectl get pods
+  523  kubectl get namespace
+  524  kubectl delete all --all --namespace=newtest
+  525  kubectl get namespace
+  526  kubectl delete namespace newtest
+  527  kubectl apply -f quota.yml 
+  528  kubectl describe namespace test
+  529  kubectl apply -f deploy.yaml 
+  530  kubectl describe namespace test
+  531  kubectl apply -f redis.yaml
+  532  kubectl apply -f limitrange.yaml 
+  533  kubectl describe namespace
+  534  kubectl apply -f redis.yaml
+  535  kubectl delete all --all
+  536  kubectl get namespave
+  537  kubectl get namespac
+  538  kubectl get namespace
+  539  kubectl get nodes
+  540  kubectl label nodes disktype=ssd
+  541  kubectl label nodes ip-192-168-26-128.ec2.internal disktype=ssd
+  542  kubectl get nodes --show-labels
+  543  vi deploy
+  544  vi deploy.yaml 
+  545  kubectl delete all --all
+  546  kubectl apply -f redis.yaml
+  547  kubectl apply -f liveliness.yaml 
+  548  kubectl get pods
+  549  kubectl describe pod liveness-exec
+  550  kubectl get pods
+  551  kubectl describe pod liveness-exec
+  552  kubectl get pods
+  553  eksctl delete cluster --region us-east-1 --name prod
+  554  tiller -listen=localhost:44134 -storage=secret -logtostderr
+  555  ls -ltr
+  556  cd dockertraining/
+  557  ls
+  558  l
+  559  ls
+  560  ls -a
+  561  git status
+  562  git add .
+  563  git status
+  564  git commit 
+  565  git push
+  566  git clone https://github.com/aws/aws-app-mesh-examples
+  567  ls
+  568  sudo yum -y install java-1.8.0-openjdk.x86_64
+  569  sudo yum -y remove java-1.7.0-openjdk
+  570  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+  571  sudo  rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+  572  sudo yum install -y  jenkins
+  573  sudo service jenkins start
+  574  sudo chkconfig jenkins on
+  575   sudo service jenkins status
+  576  hostname
+  577  cat /var/lib/jenkins/secrets/initialAdminPassword
+  578  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  579  sudo yum -y install ansible
+  580  sudo pip install boto boto3 botocore
+  581  sudo usermod -a -G docker jenkins
+  582  vi /etc/group
+  583  sudo service jenkins restart
+  584  sudo cp -R ~/.kube/ /var/lib/jenkins/
+  585  sudo chown jenkins:jenkins /var/lib/jenkins//.kube/
+  586  ls ~/.kube/
+  587  history
