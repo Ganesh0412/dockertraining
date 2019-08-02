@@ -1,0 +1,41 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: frontend
+    image: ganesh0412/myfrontend1:1.1
+    depends_on:
+      - backend
+    ports:
+      - "9000:80"
+    volumes:
+      - frontend-var-log:/var/log
+    environment:
+      BACKENDLB: test
+  frontendlog:
+    build:
+      context: awslogs
+    image: ganesh0412/myfrontendlogs1:1.1
+    depends_on:
+      - frontend
+    volumes:
+      - frontend-var-log:/mnt/log
+  backend:
+    build:
+      context: backend
+    image: ganesh0412/mybackend1:1.1
+    volumes:
+      - backend-var-log:/var/log
+  backendlog:
+    build:
+      context: awslogs
+    image: ganesh0412/mybackendlogs1:1.1
+    depends_on:
+      - backend
+    volumes:
+      - backend-var-log:/mnt/log:ro
+volumes:
+  frontend-var-log:
+  backend-var-log:
+
+
